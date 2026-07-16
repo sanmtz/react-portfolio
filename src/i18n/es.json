@@ -1,0 +1,148 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "cta": "Contáctame"
+  },
+  "hero": {
+    "badge": "Portafolio 2026",
+    "greeting": "Hola, soy",
+    "description": "Creando experiencias digitales únicas con código limpio y diseño moderno.",
+    "cta_projects": "Ver proyectos",
+    "cta_about": "Sobre mí",
+    "roles": [
+      "Desarrolladora Web",
+      "Full Stack Developer",
+      "React Developer",
+      "UI/UX Enthusiast",
+      "Mobile Developer"
+    ]
+  },
+  "about": {
+    "badge": "Conóceme",
+    "title": "Acerca de mí",
+    "p1": "Hola, soy Sandra, una desarrolladora web con experiencia en el desarrollo de aplicaciones web y aplicaciones móviles.",
+    "p2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+  },
+  "skills": {
+    "badge": "Stack Tecnológico",
+    "title": "Habilidades Técnicas",
+    "description": "Tecnologías que utilizo en mis proyectos"
+  },
+  "ai": {
+    "badge": "Powered by AI",
+    "title_before": "Trabajo con",
+    "title_highlight": "Inteligencia Artificial",
+    "description": "Combino desarrollo web con las últimas tecnologías de IA para crear experiencias únicas, automatizar procesos y construir skills inteligentes.",
+    "skills": [
+      {
+        "title": "Chatbots & Asistentes",
+        "description": "Diseño y desarrollo de chatbots inteligentes con procesamiento de lenguaje natural."
+      },
+      {
+        "title": "Prompt Engineering",
+        "description": "Creación de prompts avanzados para obtener resultados óptimos de modelos de IA."
+      },
+      {
+        "title": "AI-Powered Apps",
+        "description": "Integración de APIs de IA (OpenAI, Gemini) en aplicaciones web y móviles."
+      },
+      {
+        "title": "Automatización",
+        "description": "Workflows inteligentes que optimizan procesos con machine learning."
+      }
+    ],
+    "tools_label": "Herramientas que utilizo"
+  },
+  "audit": {
+    "badge": "Servicios Especializados",
+    "title_before": "Auditorías Web &",
+    "title_highlight": "Performance",
+    "description": "Optimizo sitios web para alcanzar los mejores estándares de rendimiento, accesibilidad y experiencia de usuario.",
+    "lighthouse_label": "Resultados Lighthouse",
+    "metrics": {
+      "performance": "Performance",
+      "accessibility": "Accesibilidad",
+      "best_practices": "Best Practices",
+      "seo": "SEO"
+    },
+    "services": [
+      {
+        "title": "Performance Optimization",
+        "description": "Análisis profundo de Core Web Vitals, tiempos de carga, lazy loading y optimización de recursos para alcanzar scores de 90+.",
+        "tags": ["Lighthouse", "Core Web Vitals", "Speed"]
+      },
+      {
+        "title": "Experiencia de Usuario",
+        "description": "Auditorías de UX para mejorar la navegación, accesibilidad y satisfacción del usuario con base en datos reales.",
+        "tags": ["UX Research", "A/B Testing", "Heatmaps"]
+      },
+      {
+        "title": "Auditoría SEO Técnica",
+        "description": "Revisión completa de estructura HTML, meta tags, schema markup, indexación y rendimiento en buscadores.",
+        "tags": ["SEO", "Schema", "Indexación"]
+      },
+      {
+        "title": "Responsive & Mobile",
+        "description": "Evaluación de la experiencia móvil, touch targets, viewport optimization y adaptive design.",
+        "tags": ["Mobile First", "PWA", "Responsive"]
+      },
+      {
+        "title": "Código & Arquitectura",
+        "description": "Revisión de la calidad del código, bundle size, code splitting, tree shaking y mejores prácticas.",
+        "tags": ["Code Review", "Webpack", "Vite"]
+      },
+      {
+        "title": "Analytics & Métricas",
+        "description": "Configuración de tracking, dashboards de rendimiento y reportes accionables para toma de decisiones.",
+        "tags": ["GA4", "GTM", "Data Studio"]
+      }
+    ],
+    "cta": "Solicitar una auditoría"
+  },
+  "projects": {
+    "badge": "Portafolio",
+    "title": "Proyectos",
+    "description": "Algunos de mis proyectos",
+    "scroll": "Scroll",
+    "end_cta_title": "¿Te gusta lo que ves?",
+    "end_cta_button": "Trabajemos juntos",
+    "items": [
+      { "name": "Capacitate para el empleo", "description": "Plataforma educativa de capacitación laboral" },
+      { "name": "Aprende", "description": "Portal de aprendizaje en línea" },
+      { "name": "Genera", "description": "Software de recursos humanos" },
+      { "name": "Capacitate para el empleo", "description": "Plataforma educativa de capacitación laboral" },
+      { "name": "Aprende", "description": "Portal de aprendizaje en línea" },
+      { "name": "Genera", "description": "Software de recursos humanos" }
+    ]
+  },
+  "contact": {
+    "badge": "Hablemos",
+    "title": "Contáctame",
+    "info_title": "Información de Contacto",
+    "email_label": "Email",
+    "phone_label": "Teléfono",
+    "location_label": "Ubicación",
+    "location_value": "Ciudad de México, México",
+    "social_label": "Sígueme en redes",
+    "form_title": "Envíame un mensaje",
+    "name_label": "Nombre completo",
+    "name_placeholder": "Ej. Juan Pérez",
+    "email_input_label": "Correo electrónico",
+    "email_placeholder": "ejemplo@correo.com",
+    "subject_label": "Asunto",
+    "subject_placeholder": "¿En qué puedo ayudarte?",
+    "message_label": "Mensaje",
+    "message_placeholder": "Escribe tu mensaje aquí...",
+    "submit": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito! Te responderé lo antes posible.",
+    "error": "Hubo un error al enviar el mensaje. Por favor intenta nuevamente."
+  },
+  "footer": {
+    "copyright": "© 2026 Sandra Mtz. All rights reserved."
+  }
+}

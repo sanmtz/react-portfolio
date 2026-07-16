@@ -1,0 +1,148 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "badge": "Portfolio 2026",
+    "greeting": "Hi, I'm",
+    "description": "Creating unique digital experiences with clean code and modern design.",
+    "cta_projects": "View Projects",
+    "cta_about": "About Me",
+    "roles": [
+      "Web Developer",
+      "Full Stack Developer",
+      "React Developer",
+      "UI/UX Enthusiast",
+      "Mobile Developer"
+    ]
+  },
+  "about": {
+    "badge": "Get to know me",
+    "title": "About Me",
+    "p1": "Hi, I'm Sandra, a web developer with experience in building web and mobile applications.",
+    "p2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+  },
+  "skills": {
+    "badge": "Tech Stack",
+    "title": "Technical Skills",
+    "description": "Technologies I use in my projects"
+  },
+  "ai": {
+    "badge": "Powered by AI",
+    "title_before": "I Work with",
+    "title_highlight": "Artificial Intelligence",
+    "description": "I combine web development with the latest AI technologies to create unique experiences, automate processes, and build intelligent skills.",
+    "skills": [
+      {
+        "title": "Chatbots & Assistants",
+        "description": "Design and development of intelligent chatbots with natural language processing."
+      },
+      {
+        "title": "Prompt Engineering",
+        "description": "Creating advanced prompts to obtain optimal results from AI models."
+      },
+      {
+        "title": "AI-Powered Apps",
+        "description": "Integration of AI APIs (OpenAI, Gemini) into web and mobile applications."
+      },
+      {
+        "title": "Automation",
+        "description": "Intelligent workflows that optimize processes with machine learning."
+      }
+    ],
+    "tools_label": "Tools I use"
+  },
+  "audit": {
+    "badge": "Specialized Services",
+    "title_before": "Web Audits &",
+    "title_highlight": "Performance",
+    "description": "I optimize websites to meet the highest standards of performance, accessibility, and user experience.",
+    "lighthouse_label": "Lighthouse Results",
+    "metrics": {
+      "performance": "Performance",
+      "accessibility": "Accessibility",
+      "best_practices": "Best Practices",
+      "seo": "SEO"
+    },
+    "services": [
+      {
+        "title": "Performance Optimization",
+        "description": "Deep analysis of Core Web Vitals, load times, lazy loading, and resource optimization to achieve 90+ scores.",
+        "tags": ["Lighthouse", "Core Web Vitals", "Speed"]
+      },
+      {
+        "title": "User Experience",
+        "description": "UX audits to improve navigation, accessibility, and user satisfaction based on real data.",
+        "tags": ["UX Research", "A/B Testing", "Heatmaps"]
+      },
+      {
+        "title": "Technical SEO Audit",
+        "description": "Complete review of HTML structure, meta tags, schema markup, indexing, and search engine performance.",
+        "tags": ["SEO", "Schema", "Indexing"]
+      },
+      {
+        "title": "Responsive & Mobile",
+        "description": "Mobile experience evaluation, touch targets, viewport optimization, and adaptive design.",
+        "tags": ["Mobile First", "PWA", "Responsive"]
+      },
+      {
+        "title": "Code & Architecture",
+        "description": "Code quality review, bundle size, code splitting, tree shaking, and best practices.",
+        "tags": ["Code Review", "Webpack", "Vite"]
+      },
+      {
+        "title": "Analytics & Metrics",
+        "description": "Tracking setup, performance dashboards, and actionable reports for decision making.",
+        "tags": ["GA4", "GTM", "Data Studio"]
+      }
+    ],
+    "cta": "Request an Audit"
+  },
+  "projects": {
+    "badge": "Portfolio",
+    "title": "Projects",
+    "description": "Some of my projects",
+    "scroll": "Scroll",
+    "end_cta_title": "Like what you see?",
+    "end_cta_button": "Let's work together",
+    "items": [
+      { "name": "Capacitate para el empleo", "description": "Educational job training platform" },
+      { "name": "Aprende", "description": "Online learning portal" },
+      { "name": "Genera", "description": "Human resources software" },
+      { "name": "Capacitate para el empleo", "description": "Educational job training platform" },
+      { "name": "Aprende", "description": "Online learning portal" },
+      { "name": "Genera", "description": "Human resources software" }
+    ]
+  },
+  "contact": {
+    "badge": "Let's Talk",
+    "title": "Contact Me",
+    "info_title": "Contact Information",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "location_label": "Location",
+    "location_value": "Mexico City, Mexico",
+    "social_label": "Follow me",
+    "form_title": "Send me a message",
+    "name_label": "Full name",
+    "name_placeholder": "e.g. John Doe",
+    "email_input_label": "Email address",
+    "email_placeholder": "example@email.com",
+    "subject_label": "Subject",
+    "subject_placeholder": "How can I help you?",
+    "message_label": "Message",
+    "message_placeholder": "Write your message here...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! I'll get back to you as soon as possible.",
+    "error": "There was an error sending the message. Please try again."
+  },
+  "footer": {
+    "copyright": "© 2026 Sandra Mtz. All rights reserved."
+  }
+}
