@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  /* Antigravity-inspired light palette with warm accent */
+:root {
   --color-surface: #f4f5f9;
   --color-surface-alt: #ebedf5;
   --color-surface-card: #ffffff;

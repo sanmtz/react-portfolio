@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { FiMenu, FiX, FiUser, FiHome, FiSettings, FiBriefcase, FiPhone, FiCode, FiGlobe } from "react-icons/fi";
+import { FiMenu, FiX, FiUser, FiSettings, FiBriefcase, FiPhone, FiCode, FiGlobe, FiCpu } from "react-icons/fi";
 import { useTranslation } from "../i18n/LanguageContext";
 
 const Header = () => {
@@ -14,11 +14,11 @@ const Header = () => {
     }, []);
 
     const navLinks = [
-        { id: 1, name: t('header.home'), href: "#home", icon: <FiHome /> },
         { id: 2, name: t('header.about'), href: "#about", icon: <FiUser /> },
         { id: 3, name: t('header.skills'), href: "#skills", icon: <FiSettings /> },
-        { id: 4, name: t('header.projects'), href: "#projects", icon: <FiBriefcase /> },
-        { id: 5, name: t('header.contact'), href: "#contact", icon: <FiPhone /> },
+        { id: 4, name: t('header.ai'), href: "#ai", icon: <FiCpu /> },
+        { id: 5, name: t('header.projects'), href: "#projects", icon: <FiBriefcase /> },
+        { id: 6, name: t('header.contact'), href: "#contact", icon: <FiPhone /> },
     ];
 
     const toggleLang = () => setLang(lang === 'es' ? 'en' : 'es');
@@ -28,7 +28,7 @@ const Header = () => {
             <div className="container mx-auto px-6 lg:px-16">
                 <div className="flex justify-between items-center py-5">
                     {/* Logo */}
-                    <a href="#home" className="flex items-center gap-2 text-text-primary hover:text-accent transition-colors">
+                    <a href="#" className="flex items-center gap-2 text-text-primary hover:text-accent transition-colors">
                         <FiCode className="text-2xl" />
                         <span className="font-semibold text-lg tracking-tight">Sandra</span>
                     </a>

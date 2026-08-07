@@ -38,7 +38,7 @@ const About = () => {
 
                         {/* Stats-like pills inspired by Antigravity's icon circles */}
                         <div className="flex flex-wrap gap-3 mt-10">
-                            {['React', 'TypeScript', 'Node.js', 'Tailwind'].map((tech) => (
+                            {['Angular', 'TypeScript', 'React', 'Tailwind CSS', 'APIs REST', 'Figma'].map((tech) => (
                                 <span
                                     key={tech}
                                     className="px-4 py-2 bg-surface rounded-full text-sm font-medium text-text-secondary border border-border hover:border-accent/30 hover:text-accent transition-all duration-300"

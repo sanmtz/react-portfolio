@@ -62,8 +62,8 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-xs font-medium text-text-muted uppercase tracking-wider">{t('contact.email_label')}</p>
-                                        <a href="mailto:hola@sandra.dev" className="text-sm font-medium text-text-primary hover:text-accent transition-colors">
-                                            hola@sandra.dev
+                                        <a href="mailto:sansam252@gmail.com" className="text-sm font-medium text-text-primary hover:text-accent transition-colors">
+                                            sansam252@gmail.com
                                         </a>
                                     </div>
                                 </div>
@@ -74,11 +74,11 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-xs font-medium text-text-muted uppercase tracking-wider">{t('contact.phone_label')}</p>
-                                        <p className="text-sm font-medium text-text-primary">+52 (55) 1234 5678</p>
+                                        <p className="text-sm font-medium text-text-primary">+52 (77) 7209 5506</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4">
+                                {/* <div className="flex items-start gap-4">
                                     <div className="p-3 bg-white rounded-2xl border border-border text-accent">
                                         <FaMapMarkerAlt className="text-lg" />
                                     </div>
@@ -86,20 +86,17 @@ const Contact = () => {
                                         <p className="text-xs font-medium text-text-muted uppercase tracking-wider">{t('contact.location_label')}</p>
                                         <p className="text-sm font-medium text-text-primary">{t('contact.location_value')}</p>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
                             <div className="mt-8 pt-8 border-t border-border">
                                 <h4 className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-4">{t('contact.social_label')}</h4>
                                 <div className="flex gap-3">
-                                    <a href="#" className="p-3 bg-white rounded-2xl border border-border text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-300">
+                                    <a href="https://www.linkedin.com/in/sandra-mtz-c/" className="p-3 bg-white rounded-2xl border border-border text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-300">
                                         <FaLinkedin className="text-lg" />
                                     </a>
-                                    <a href="#" className="p-3 bg-white rounded-2xl border border-border text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-300">
+                                    <a href="https://github.com/SanSam13/" className="p-3 bg-white rounded-2xl border border-border text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-300">
                                         <FaGithub className="text-lg" />
-                                    </a>
-                                    <a href="#" className="p-3 bg-white rounded-2xl border border-border text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-300">
-                                        <FaInstagram className="text-lg" />
                                     </a>
                                 </div>
                             </div>

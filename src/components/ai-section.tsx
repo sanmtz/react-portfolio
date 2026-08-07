@@ -32,12 +32,12 @@ const AISection = () => {
             <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-glow-violet rounded-full blur-[120px] pointer-events-none" />
 
             <div className="container mx-auto px-6 lg:px-16 relative z-10">
-                <div className="flex justify-center mb-6" data-aos="fade-down">
+                {/* <div className="flex justify-center mb-6" data-aos="fade-down">
                     <div className="flex items-center gap-2 px-4 py-2 bg-accent/[0.06] border border-accent/10 rounded-full">
                         <FaBolt className="text-accent text-xs" />
                         <span className="text-xs font-medium text-accent/70 tracking-wider uppercase">{t('ai.badge')}</span>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="text-center mb-20" data-aos="fade-up">
                     <h2 className="text-4xl lg:text-5xl font-bold text-text-primary mb-6 leading-tight">
@@ -52,7 +52,7 @@ const AISection = () => {
                     </p>
                 </div>
 
-                <div className="flex flex-col lg:flex-row items-center gap-16">
+                {/* <div className="flex flex-col lg:flex-row items-center gap-16">
                     <div className="w-full lg:w-2/5 flex justify-center" data-aos="zoom-in" data-aos-delay="200">
                         <div ref={orbRef} className="relative transition-transform duration-300 ease-out">
                             <div className="absolute -inset-8 rounded-full border border-accent/15 animate-[spin_20s_linear_infinite]">
@@ -90,12 +90,12 @@ const AISection = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
                 <div className="mt-24 relative" data-aos="fade-up" data-aos-delay="600">
                     <p className="text-center text-xs text-text-muted uppercase tracking-[0.3em] mb-8">{t('ai.tools_label')}</p>
                     <div className="flex items-center justify-center flex-wrap gap-3 md:gap-4">
-                        {['OpenAI', 'Gemini', 'LangChain', 'Hugging Face', 'TensorFlow', 'Python AI', 'RAG', 'Vector DB'].map((tool) => (
+                        {['OpenAI', 'Gemini', 'Codex', 'Antigravity', 'Cursor', 'GitHub Copilot', 'Claude', 'ChatGPT'].map((tool) => (
                             <span
                                 key={tool}
                                 className="px-5 py-2.5 rounded-full border border-border text-sm font-medium text-text-muted hover:text-accent hover:border-accent/30 hover:bg-accent/[0.03] transition-all duration-300 cursor-default"

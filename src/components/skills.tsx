@@ -1,5 +1,5 @@
-import { FaJs, FaCss3Alt, FaHtml5, FaReact, FaNodeJs, FaJava, FaPython, FaGitAlt, FaBootstrap } from "react-icons/fa";
-import { SiTypescript, SiTailwindcss, SiMysql, SiFirebase, SiMongodb } from "react-icons/si";
+import { FaJs, FaCss3Alt, FaHtml5, FaReact, FaGitAlt, FaBootstrap, FaFigma, FaAngular, FaBrain, FaGithub, FaBitbucket } from "react-icons/fa";
+import { SiTypescript, SiTailwindcss, SiFirebase, SiWordpress, SiHubspot, SiOctobercms } from "react-icons/si";
 import { useTranslation } from "../i18n/LanguageContext";
 
 const skills = [
@@ -8,14 +8,17 @@ const skills = [
     { name: "HTML5", icon: <FaHtml5 className="text-[#E34F26]" /> },
     { name: "CSS3", icon: <FaCss3Alt className="text-[#1572B6]" /> },
     { name: "React", icon: <FaReact className="text-[#61DAFB]" /> },
+    { name: "Angular", icon: <FaAngular className="text-[#DD0031]" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
-    { name: "Node.js", icon: <FaNodeJs className="text-[#339933]" /> },
-    { name: "Java", icon: <FaJava className="text-[#007396]" /> },
-    { name: "Python", icon: <FaPython className="text-[#3776AB]" /> },
+    { name: "Figma", icon: <FaFigma className="text-[#F24E1E]" /> },
+    { name: "Inteligencia Artificial", icon: <FaBrain className="text-[#A855F7]" /> },
+    { name: "WordPress", icon: <SiWordpress className="text-[#21759B]" /> },
+    { name: "HubSpot", icon: <SiHubspot className="text-[#FF7A59]" /> },
+    { name: "October CMS", icon: <SiOctobercms className="text-[#E57300]" /> },
     { name: "Git", icon: <FaGitAlt className="text-[#F05032]" /> },
-    { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> },
+    { name: "GitHub", icon: <FaGithub className="text-[#181717]" /> },
+    { name: "Bitbucket", icon: <FaBitbucket className="text-[#0052CC]" /> },
     { name: "Firebase", icon: <SiFirebase className="text-[#FFCA28]" /> },
-    { name: "MongoDB", icon: <SiMongodb className="text-[#47A248]" /> },
     { name: "Bootstrap", icon: <FaBootstrap className="text-[#7952B3]" /> },
 ];
 

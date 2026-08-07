@@ -1,8 +1,8 @@
 {
   "header": {
-    "home": "Home",
     "about": "Sobre mí",
     "skills": "Habilidades",
+    "ai": "IA",
     "projects": "Proyectos",
     "contact": "Contacto",
     "cta": "Contáctame"
@@ -10,27 +10,26 @@
   "hero": {
     "badge": "Portafolio 2026",
     "greeting": "Hola, soy",
-    "description": "Creando experiencias digitales únicas con código limpio y diseño moderno.",
+    "description": "Desarrollo experiencias web rápidas, intuitivas y optimizadas, combinando Front-End moderno, rendimiento web e Inteligencia Artificial para crear productos digitales de alta calidad.",
     "cta_projects": "Ver proyectos",
     "cta_about": "Sobre mí",
     "roles": [
-      "Desarrolladora Web",
-      "Full Stack Developer",
-      "React Developer",
-      "UI/UX Enthusiast",
-      "Mobile Developer"
+      "Desarrollador Front-End",
+      "Desarrollador Angular",
+      "Desarrollador React",
+      "Entusiasta de UI/UX"
     ]
   },
   "about": {
     "badge": "Conóceme",
     "title": "Acerca de mí",
-    "p1": "Hola, soy Sandra, una desarrolladora web con experiencia en el desarrollo de aplicaciones web y aplicaciones móviles.",
-    "p2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+    "p1": "Creo que un buen desarrollo Front-End va más allá de escribir código. Mi objetivo es crear experiencias digitales que sean intuitivas, rápidas y agradables para quienes las utilizan.\n\nMe gusta mantenerme en constante aprendizaje y explorar nuevas tecnologías que me permitan ofrecer mejores soluciones.",
+    "p2": "Actualmente estoy fortaleciendo mis conocimientos en React, Inteligencia Artificial aplicada al desarrollo y mejores prácticas de rendimiento web para seguir creciendo como desarrolladora.\n\nDisfruto colaborar en equipo, resolver problemas y convertir diseños en interfaces funcionales con atención al detalle. Siempre busco escribir código limpio, reutilizable y fácil de mantener, cuidando aspectos como la accesibilidad, el rendimiento y la experiencia del usuario."
   },
   "skills": {
-    "badge": "Stack Tecnológico",
-    "title": "Habilidades Técnicas",
-    "description": "Tecnologías que utilizo en mis proyectos"
+    "badge": "EXPERIENCIA TÉCNICA",
+    "title": "Mi stack tecnológico",
+    "description": "Trabajo con herramientas y frameworks que me permiten crear aplicaciones web eficientes, escalables y fáciles de mantener."
   },
   "ai": {
     "badge": "Powered by AI",
@@ -55,7 +54,7 @@
         "description": "Workflows inteligentes que optimizan procesos con machine learning."
       }
     ],
-    "tools_label": "Herramientas que utilizo"
+    "tools_label": "Herramientas que he utilizado"
   },
   "audit": {
     "badge": "Servicios Especializados",
@@ -73,32 +72,38 @@
       {
         "title": "Performance Optimization",
         "description": "Análisis profundo de Core Web Vitals, tiempos de carga, lazy loading y optimización de recursos para alcanzar scores de 90+.",
-        "tags": ["Lighthouse", "Core Web Vitals", "Speed"]
+        "tags": [
+          "Lighthouse",
+          "Core Web Vitals",
+          "Speed"
+        ]
       },
       {
         "title": "Experiencia de Usuario",
         "description": "Auditorías de UX para mejorar la navegación, accesibilidad y satisfacción del usuario con base en datos reales.",
-        "tags": ["UX Research", "A/B Testing", "Heatmaps"]
+        "tags": [
+          "UX Research",
+          "A/B Testing",
+          "Heatmaps"
+        ]
       },
       {
         "title": "Auditoría SEO Técnica",
         "description": "Revisión completa de estructura HTML, meta tags, schema markup, indexación y rendimiento en buscadores.",
-        "tags": ["SEO", "Schema", "Indexación"]
+        "tags": [
+          "SEO",
+          "Schema",
+          "Indexación"
+        ]
       },
       {
         "title": "Responsive & Mobile",
         "description": "Evaluación de la experiencia móvil, touch targets, viewport optimization y adaptive design.",
-        "tags": ["Mobile First", "PWA", "Responsive"]
-      },
-      {
-        "title": "Código & Arquitectura",
-        "description": "Revisión de la calidad del código, bundle size, code splitting, tree shaking y mejores prácticas.",
-        "tags": ["Code Review", "Webpack", "Vite"]
-      },
-      {
-        "title": "Analytics & Métricas",
-        "description": "Configuración de tracking, dashboards de rendimiento y reportes accionables para toma de decisiones.",
-        "tags": ["GA4", "GTM", "Data Studio"]
+        "tags": [
+          "Mobile First",
+          "PWA",
+          "Responsive"
+        ]
       }
     ],
     "cta": "Solicitar una auditoría"
@@ -106,17 +111,65 @@
   "projects": {
     "badge": "Portafolio",
     "title": "Proyectos",
-    "description": "Algunos de mis proyectos",
-    "scroll": "Scroll",
+    "description": "Explora algunos de los proyectos en los que he participado, desarrollando interfaces modernas, funcionales y optimizadas.",
+    "view_project": "Ver proyecto",
     "end_cta_title": "¿Te gusta lo que ves?",
     "end_cta_button": "Trabajemos juntos",
     "items": [
-      { "name": "Capacitate para el empleo", "description": "Plataforma educativa de capacitación laboral" },
-      { "name": "Aprende", "description": "Portal de aprendizaje en línea" },
-      { "name": "Genera", "description": "Software de recursos humanos" },
-      { "name": "Capacitate para el empleo", "description": "Plataforma educativa de capacitación laboral" },
-      { "name": "Aprende", "description": "Portal de aprendizaje en línea" },
-      { "name": "Genera", "description": "Software de recursos humanos" }
+      {
+        "name": "Capacitate para el empleo",
+        "description": "Plataforma educativa de capacitación laboral con cursos, diplomas y rutas de aprendizaje para miles de usuarios.",
+        "tags": [
+          "Angular",
+          "TypeScript",
+          "Bootstrap"
+        ]
+      },
+      {
+        "name": "Aprende",
+        "description": "Portal de aprendizaje en línea con acceso libre y gratuito a contenido educativo de alta calidad.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "Genera",
+        "description": "Software de gestión de recursos humanos para controlar accesos, visitas y operaciones empresariales.",
+        "tags": [
+          "WordPress",
+          "HubSpot",
+          "CSS3"
+        ]
+      },
+      {
+        "name": "Capacitate para el empleo",
+        "description": "Plataforma educativa de capacitación laboral con cursos, diplomas y rutas de aprendizaje para miles de usuarios.",
+        "tags": [
+          "Angular",
+          "TypeScript",
+          "Bootstrap"
+        ]
+      },
+      {
+        "name": "Aprende",
+        "description": "Portal de aprendizaje en línea con acceso libre y gratuito a contenido educativo de alta calidad.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "Growth Summit",
+        "description": "Landing page para el evento más grande de Inbound Marketing en LATAM, con diseño dinámico y moderno.",
+        "tags": [
+          "HubSpot",
+          "CSS3",
+          "JavaScript"
+        ]
+      }
     ]
   },
   "contact": {

@@ -15,14 +15,11 @@ const Footer = () => {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <a href="#" className="text-white/40 hover:text-white transition-colors duration-300">
+                        <a href="https://www.linkedin.com/in/sandra-mtz-c/" className="text-white/40 hover:text-white transition-colors duration-300">
                             <FaLinkedin className="text-lg" />
                         </a>
-                        <a href="#" className="text-white/40 hover:text-white transition-colors duration-300">
+                        <a href="https://github.com/SanSam13/" className="text-white/40 hover:text-white transition-colors duration-300">
                             <FaGithub className="text-lg" />
-                        </a>
-                        <a href="#" className="text-white/40 hover:text-white transition-colors duration-300">
-                            <FaInstagram className="text-lg" />
                         </a>
                     </div>
 

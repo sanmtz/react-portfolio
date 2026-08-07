@@ -1,8 +1,8 @@
 {
   "header": {
-    "home": "Home",
     "about": "About",
     "skills": "Skills",
+    "ai": "AI",
     "projects": "Projects",
     "contact": "Contact",
     "cta": "Get in Touch"
@@ -10,27 +10,26 @@
   "hero": {
     "badge": "Portfolio 2026",
     "greeting": "Hi, I'm",
-    "description": "Creating unique digital experiences with clean code and modern design.",
+    "description": "I build fast, intuitive, and optimized web experiences by combining modern Front-End development, web performance, and Artificial Intelligence to create high-quality digital products.",
     "cta_projects": "View Projects",
     "cta_about": "About Me",
     "roles": [
-      "Web Developer",
-      "Full Stack Developer",
+      "Front-End Developer",
+      "Angular Developer",
       "React Developer",
-      "UI/UX Enthusiast",
-      "Mobile Developer"
+      "UI/UX Enthusiast"
     ]
   },
   "about": {
     "badge": "Get to know me",
     "title": "About Me",
-    "p1": "Hi, I'm Sandra, a web developer with experience in building web and mobile applications.",
-    "p2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+    "p1": "I believe great Front-End development goes beyond writing code. My goal is to build digital experiences that are intuitive, fast, and enjoyable for users.\n\nI'm passionate about continuous learning and exploring new technologies that help me deliver better solutions.",
+    "p2": "I'm currently expanding my skills in React, Artificial Intelligence for software development, and web performance best practices to grow as a developer.\n\nI enjoy collaborating with teams, solving complex problems, and turning designs into functional, user-friendly interfaces. I strive to write clean, reusable, and maintainable code while prioritizing accessibility, performance, and user experience."
   },
   "skills": {
-    "badge": "Tech Stack",
-    "title": "Technical Skills",
-    "description": "Technologies I use in my projects"
+    "badge": "TECHNICAL EXPERTISE",
+    "title": "My Tech Stack",
+    "description": "I work with modern tools and frameworks to build efficient, scalable, and maintainable web applications."
   },
   "ai": {
     "badge": "Powered by AI",
@@ -55,7 +54,7 @@
         "description": "Intelligent workflows that optimize processes with machine learning."
       }
     ],
-    "tools_label": "Tools I use"
+    "tools_label": "Tools I've Worked With"
   },
   "audit": {
     "badge": "Specialized Services",
@@ -73,32 +72,38 @@
       {
         "title": "Performance Optimization",
         "description": "Deep analysis of Core Web Vitals, load times, lazy loading, and resource optimization to achieve 90+ scores.",
-        "tags": ["Lighthouse", "Core Web Vitals", "Speed"]
+        "tags": [
+          "Lighthouse",
+          "Core Web Vitals",
+          "Speed"
+        ]
       },
       {
         "title": "User Experience",
         "description": "UX audits to improve navigation, accessibility, and user satisfaction based on real data.",
-        "tags": ["UX Research", "A/B Testing", "Heatmaps"]
+        "tags": [
+          "UX Research",
+          "A/B Testing",
+          "Heatmaps"
+        ]
       },
       {
         "title": "Technical SEO Audit",
         "description": "Complete review of HTML structure, meta tags, schema markup, indexing, and search engine performance.",
-        "tags": ["SEO", "Schema", "Indexing"]
+        "tags": [
+          "SEO",
+          "Schema",
+          "Indexing"
+        ]
       },
       {
         "title": "Responsive & Mobile",
         "description": "Mobile experience evaluation, touch targets, viewport optimization, and adaptive design.",
-        "tags": ["Mobile First", "PWA", "Responsive"]
-      },
-      {
-        "title": "Code & Architecture",
-        "description": "Code quality review, bundle size, code splitting, tree shaking, and best practices.",
-        "tags": ["Code Review", "Webpack", "Vite"]
-      },
-      {
-        "title": "Analytics & Metrics",
-        "description": "Tracking setup, performance dashboards, and actionable reports for decision making.",
-        "tags": ["GA4", "GTM", "Data Studio"]
+        "tags": [
+          "Mobile First",
+          "PWA",
+          "Responsive"
+        ]
       }
     ],
     "cta": "Request an Audit"
@@ -106,17 +111,65 @@
   "projects": {
     "badge": "Portfolio",
     "title": "Projects",
-    "description": "Some of my projects",
-    "scroll": "Scroll",
+    "description": "Explore a selection of projects where I've built modern, high-performance, and user-focused web interfaces.",
+    "view_project": "Explore project",
     "end_cta_title": "Like what you see?",
     "end_cta_button": "Let's work together",
     "items": [
-      { "name": "Capacitate para el empleo", "description": "Educational job training platform" },
-      { "name": "Aprende", "description": "Online learning portal" },
-      { "name": "Genera", "description": "Human resources software" },
-      { "name": "Capacitate para el empleo", "description": "Educational job training platform" },
-      { "name": "Aprende", "description": "Online learning portal" },
-      { "name": "Genera", "description": "Human resources software" }
+      {
+        "name": "Capacitate para el empleo",
+        "description": "Educational job training platform with courses, diplomas, and learning paths for thousands of users.",
+        "tags": [
+          "Angular",
+          "TypeScript",
+          "Bootstrap"
+        ]
+      },
+      {
+        "name": "Aprende",
+        "description": "Online learning portal with free and universal access to high-quality educational content.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "Genera",
+        "description": "Human resources management software for controlling access, visits, and business operations.",
+        "tags": [
+          "WordPress",
+          "HubSpot",
+          "CSS3"
+        ]
+      },
+      {
+        "name": "Capacitate para el empleo",
+        "description": "Educational job training platform with courses, diplomas, and learning paths for thousands of users.",
+        "tags": [
+          "Angular",
+          "TypeScript",
+          "Bootstrap"
+        ]
+      },
+      {
+        "name": "Aprende",
+        "description": "Online learning portal with free and universal access to high-quality educational content.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "Growth Summit",
+        "description": "Landing page for the biggest Inbound Marketing event in LATAM, with a dynamic and modern design.",
+        "tags": [
+          "HubSpot",
+          "CSS3",
+          "JavaScript"
+        ]
+      }
     ]
   },
   "contact": {

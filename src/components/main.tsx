@@ -5,7 +5,7 @@ import About from "./about";
 import Skills from "./skills";
 import AISection from "./ai-section";
 import WebAudit from "./web-audit";
-import Projects from "./projects";
+import ProjectsNew from "./projects-new";
 import Contact from "./contact";
 
 const Main = () => {
@@ -15,9 +15,9 @@ const Main = () => {
             <Hero />
             <About />
             <Skills />
+            {/*  <WebAudit /> */}
             <AISection />
-            <WebAudit />
-            <Projects />
+            <ProjectsNew />
             <Contact />
             <Footer />
         </div>
