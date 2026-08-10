@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import photo from "../assets/photo.jpeg"
+import photo from "../assets/san_programmer.webp"
 import { useTranslation } from "../i18n/LanguageContext";
 
 const Hero = () => {
@@ -61,7 +61,7 @@ const Hero = () => {
         window.addEventListener('resize', resize);
 
         const particles: { x: number; y: number; vx: number; vy: number; size: number; color: string; opacity: number }[] = [];
-        const colors = ['#6366f1', '#8b5cf6', '#8c1d2b', '#ec4899', '#3b82f6'];
+        const colors = ['#FF5722', '#673AB7', '#FFEB3B', '#F7F7F7'];
 
         for (let i = 0; i < 60; i++) {
             particles.push({
@@ -101,37 +101,37 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden bg-surface" id="home">
+        <section className="relative min-h-screen flex items-center overflow-hidden bg-[#181818]" id="home">
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" />
-            <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-glow-blue rounded-full blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-20 right-10 w-[400px] h-[400px] bg-glow-violet rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-[#673AB7]/20 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-20 right-10 w-[400px] h-[400px] bg-[#FF5722]/20 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="container mx-auto px-6 lg:px-16 py-20 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-16 min-h-[80vh]">
                     <div className="flex flex-col items-center lg:items-start w-full lg:w-1/2">
-                        <p className="text-sm font-medium text-text-muted tracking-widest uppercase mb-6" data-aos="fade-up" data-aos-delay="100">
+                        <p className="text-sm font-medium text-[#FFEB3B] tracking-widest uppercase mb-6" data-aos="fade-up" data-aos-delay="100">
                             {t('hero.badge')}
                         </p>
-                        <h1 className="text-text-primary text-center lg:text-left mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <h1 className="text-[#F7F7F7] text-center lg:text-left mb-4" data-aos="fade-up" data-aos-delay="200">
                             {t('hero.greeting')}{' '}
-                            <span className="gradient-text">Sandra</span>
+                            <span className="bg-gradient-to-r from-[#FF5722] to-[#673AB7] bg-clip-text text-transparent">Sandra</span>
                         </h1>
 
                         <div className="h-12 flex items-center mb-8" data-aos="fade-up" data-aos-delay="300">
-                            <span className="text-2xl lg:text-3xl font-medium text-text-secondary">
+                            <span className="text-2xl lg:text-3xl font-medium text-[#F7F7F7]/80">
                                 {displayedText}
                             </span>
-                            <span className="inline-block w-[3px] h-8 bg-accent ml-1 animate-[blink_1s_step-end_infinite]" />
+                            <span className="inline-block w-[3px] h-8 bg-[#FF5722] ml-1 animate-[blink_1s_step-end_infinite]" />
                         </div>
 
-                        <p className="text-lg lg:text-xl text-text-secondary text-center lg:text-left max-w-lg leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="400">
+                        <p className="text-lg lg:text-xl text-[#F7F7F7]/70 text-center lg:text-left max-w-lg leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="400">
                             {t('hero.description')}
                         </p>
                         <div className="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="500">
-                            <a href="#projects" className="px-8 py-3.5 bg-text-primary text-white rounded-full font-medium hover:bg-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-0.5">
+                            <a href="#projects" className="px-8 py-3.5 bg-[#FF5722] text-[#F7F7F7] rounded-full font-medium hover:bg-[#FFEB3B] hover:text-[#181818] transition-all duration-300 hover:shadow-lg hover:shadow-[#FFEB3B]/20 hover:-translate-y-0.5">
                                 {t('hero.cta_projects')}
                             </a>
-                            <a href="#about" className="px-8 py-3.5 bg-white text-text-primary rounded-full font-medium border border-border hover:border-text-muted transition-all duration-300 hover:-translate-y-0.5">
+                            <a href="#about" className="px-8 py-3.5 bg-transparent text-[#F7F7F7] rounded-full font-medium border border-white/20 hover:border-[#FFEB3B] hover:text-[#FFEB3B] transition-all duration-300 hover:-translate-y-0.5">
                                 {t('hero.cta_about')}
                             </a>
                         </div>
@@ -139,8 +139,8 @@ const Hero = () => {
 
                     <div className="flex items-center justify-center w-full lg:w-1/2" data-aos="zoom-in" data-aos-delay="600">
                         <div className="relative">
-                            <div className="absolute -inset-4 bg-gradient-to-br from-indigo-200/40 via-transparent to-violet-200/40 rounded-full blur-2xl animate-[pulse-glow_4s_ease-in-out_infinite]" />
-                            <figure className="relative rounded-full overflow-hidden h-64 w-64 lg:h-96 lg:w-96 ring-2 ring-white shadow-2xl shadow-indigo-500/10">
+                            <div className="absolute -inset-4 bg-gradient-to-br from-[#FF5722]/40 via-transparent to-[#673AB7]/40 rounded-full blur-2xl animate-[pulse-glow_4s_ease-in-out_infinite]" />
+                            <figure className="relative rounded-full overflow-hidden h-64 w-64 lg:h-96 lg:w-96 ring-2 ring-[#FFEB3B]/50 shadow-2xl shadow-[#673AB7]/20">
                                 <img src={photo} alt="Sandra - Web Developer" className="w-full h-full object-cover" />
                             </figure>
                         </div>

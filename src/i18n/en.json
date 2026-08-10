@@ -193,9 +193,13 @@
     "submit": "Send Message",
     "sending": "Sending...",
     "success": "Message sent successfully! I'll get back to you as soon as possible.",
-    "error": "There was an error sending the message. Please try again."
+    "error": "There was an error sending the message. Please try again.",
+    "error_name": "Name must be at least 2 characters long.",
+    "error_email": "Please enter a valid email address.",
+    "error_subject": "Subject must be at least 3 characters long.",
+    "error_message": "Message must be at least 10 characters long."
   },
   "footer": {
-    "copyright": "© 2026 Sandra Mtz. All rights reserved."
+    "copyright": "© 2026 Sandra Mtz. All rights reserved. Some images are used for reference and illustrative purposes only and remain the property of their respective owners."
   }
 }

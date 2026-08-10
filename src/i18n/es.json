@@ -118,55 +118,74 @@
     "items": [
       {
         "name": "Capacitate para el empleo",
-        "description": "Plataforma educativa de capacitación laboral con cursos, diplomas y rutas de aprendizaje para miles de usuarios.",
         "tags": [
           "Angular",
           "TypeScript",
-          "Bootstrap"
+          "Angular Material",
+          "Consumo APIs Rest"
         ]
       },
       {
         "name": "Aprende",
-        "description": "Portal de aprendizaje en línea con acceso libre y gratuito a contenido educativo de alta calidad.",
         "tags": [
-          "React",
+          "Angular",
           "TypeScript",
-          "Tailwind CSS"
+          "Angular Material",
+          "Consumo APIs Rest"
         ]
       },
       {
         "name": "Genera",
         "description": "Software de gestión de recursos humanos para controlar accesos, visitas y operaciones empresariales.",
         "tags": [
-          "WordPress",
           "HubSpot",
-          "CSS3"
-        ]
-      },
-      {
-        "name": "Capacitate para el empleo",
-        "description": "Plataforma educativa de capacitación laboral con cursos, diplomas y rutas de aprendizaje para miles de usuarios.",
-        "tags": [
-          "Angular",
-          "TypeScript",
-          "Bootstrap"
-        ]
-      },
-      {
-        "name": "Aprende",
-        "description": "Portal de aprendizaje en línea con acceso libre y gratuito a contenido educativo de alta calidad.",
-        "tags": [
-          "React",
-          "TypeScript",
+          "JavaScript",
           "Tailwind CSS"
         ]
       },
       {
-        "name": "Growth Summit",
-        "description": "Landing page para el evento más grande de Inbound Marketing en LATAM, con diseño dinámico y moderno.",
+        "name": "Ekasa",
         "tags": [
           "HubSpot",
-          "CSS3",
+          "JavaScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "Summit Growth 26",
+        "tags": [
+          "HubSpot",
+          "JavaScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "MALEK",
+        "tags": [
+          "WordPress",
+          "Elementor"
+        ]
+      },
+      {
+        "name": "Tecmilenio",
+        "tags": [
+          "HubSpot",
+          "JavaScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "GTPlastics",
+        "tags": [
+          "HubSpot",
+          "JavaScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "Madreceiba",
+        "tags": [
+          "Tailwind CSS",
           "JavaScript"
         ]
       }
@@ -193,9 +212,13 @@
     "submit": "Enviar Mensaje",
     "sending": "Enviando...",
     "success": "¡Mensaje enviado con éxito! Te responderé lo antes posible.",
-    "error": "Hubo un error al enviar el mensaje. Por favor intenta nuevamente."
+    "error": "Hubo un error al enviar el mensaje. Por favor intenta nuevamente.",
+    "error_name": "El nombre debe tener al menos 2 caracteres.",
+    "error_email": "Por favor, ingresa un correo electrónico válido.",
+    "error_subject": "El asunto debe tener al menos 3 caracteres.",
+    "error_message": "El mensaje debe tener al menos 10 caracteres."
   },
   "footer": {
-    "copyright": "© 2026 Sandra Mtz. All rights reserved."
+    "copyright": "© 2026 Sandra Mtz. Todos los derechos reservados. Las imágenes utilizadas son únicamente de referencia y pertenecen a sus respectivos propietarios."
   }
 }

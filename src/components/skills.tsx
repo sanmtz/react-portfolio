@@ -1,4 +1,4 @@
-import { FaJs, FaCss3Alt, FaHtml5, FaReact, FaGitAlt, FaBootstrap, FaFigma, FaAngular, FaBrain, FaGithub, FaBitbucket } from "react-icons/fa";
+import { FaJs, FaCss3Alt, FaHtml5, FaReact, FaGitAlt, FaBootstrap, FaFigma, FaAngular, FaGithub, FaBitbucket, FaPlug } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiFirebase, SiWordpress, SiHubspot, SiOctobercms } from "react-icons/si";
 import { useTranslation } from "../i18n/LanguageContext";
 
@@ -11,7 +11,7 @@ const skills = [
     { name: "Angular", icon: <FaAngular className="text-[#DD0031]" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
     { name: "Figma", icon: <FaFigma className="text-[#F24E1E]" /> },
-    { name: "Inteligencia Artificial", icon: <FaBrain className="text-[#A855F7]" /> },
+    { name: "APIs REST", icon: <FaPlug className="text-[#FF5722]" /> },
     { name: "WordPress", icon: <SiWordpress className="text-[#21759B]" /> },
     { name: "HubSpot", icon: <SiHubspot className="text-[#FF7A59]" /> },
     { name: "October CMS", icon: <SiOctobercms className="text-[#E57300]" /> },
@@ -26,15 +26,15 @@ const Skills = () => {
     const { t } = useTranslation();
 
     return (
-        <section className="relative py-28 bg-surface overflow-hidden section-glow" id="skills">
+        <section className="relative py-28 bg-[#181818] overflow-hidden section-glow" id="skills">
             {/* Antigravity-style gradient orbs */}
-            <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-glow-violet rounded-full blur-[120px] pointer-events-none -translate-y-1/2" />
-            <div className="absolute top-1/2 right-0 w-[300px] h-[300px] bg-glow-blue rounded-full blur-[100px] pointer-events-none -translate-y-1/2" />
+            <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-[#673AB7]/20 rounded-full blur-[120px] pointer-events-none -translate-y-1/2" />
+            <div className="absolute top-1/2 right-0 w-[300px] h-[300px] bg-[#FF5722]/20 rounded-full blur-[100px] pointer-events-none -translate-y-1/2" />
 
             <div className="container mx-auto px-6 lg:px-16 mb-14 text-center relative z-10" data-aos="fade-down">
-                <p className="text-sm font-medium text-text-muted tracking-widest uppercase mb-4">{t('skills.badge')}</p>
-                <h2 className="text-text-primary mb-4">{t('skills.title')}</h2>
-                <p className="text-lg text-text-secondary max-w-md mx-auto">{t('skills.description')}</p>
+                <p className="text-sm font-medium text-[#FFEB3B] tracking-widest uppercase mb-4">{t('skills.badge')}</p>
+                <h2 className="text-[#F7F7F7] mb-4">{t('skills.title')}</h2>
+                <p className="text-lg text-[#F7F7F7]/70 max-w-md mx-auto">{t('skills.description')}</p>
             </div>
 
             {/* Scrolling carousel like Antigravity's icon row */}
@@ -45,12 +45,12 @@ const Skills = () => {
                         {skills.map((skill, index) => (
                             <div
                                 key={`skill-1-${index}`}
-                                className="flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-border hover:border-accent/20 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 w-32 h-32 group cursor-default"
+                                className="flex flex-col items-center justify-center p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-[#FFEB3B]/50 hover:shadow-lg hover:shadow-[#FFEB3B]/20 transition-all duration-300 w-32 h-32 group cursor-default"
                             >
                                 <div className="text-4xl mb-3 transform group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
                                     {skill.icon}
                                 </div>
-                                <span className="text-xs font-medium text-text-muted group-hover:text-text-primary transition-colors">{skill.name}</span>
+                                <span className="text-xs font-medium text-[#F7F7F7]/70 group-hover:text-[#FFEB3B] transition-colors">{skill.name}</span>
                             </div>
                         ))}
                     </div>
@@ -59,20 +59,20 @@ const Skills = () => {
                         {skills.map((skill, index) => (
                             <div
                                 key={`skill-2-${index}`}
-                                className="flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-border hover:border-accent/20 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 w-32 h-32 group cursor-default"
+                                className="flex flex-col items-center justify-center p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-[#FFEB3B]/50 hover:shadow-lg hover:shadow-[#FFEB3B]/20 transition-all duration-300 w-32 h-32 group cursor-default"
                             >
                                 <div className="text-4xl mb-3 transform group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
                                     {skill.icon}
                                 </div>
-                                <span className="text-xs font-medium text-text-muted group-hover:text-text-primary transition-colors">{skill.name}</span>
+                                <span className="text-xs font-medium text-[#F7F7F7]/70 group-hover:text-[#FFEB3B] transition-colors">{skill.name}</span>
                             </div>
                         ))}
                     </div>
                 </div>
 
                 {/* Gradient overlays for smooth edges */}
-                <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-surface to-transparent z-10"></div>
-                <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-surface to-transparent z-10"></div>
+                <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#181818] to-transparent z-10"></div>
+                <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#181818] to-transparent z-10"></div>
             </div>
         </section>
     );
