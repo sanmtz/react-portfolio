@@ -128,10 +128,20 @@ const Hero = () => {
                             {t('hero.description')}
                         </p>
                         <div className="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="500">
-                            <a href="#projects" className="px-8 py-3.5 bg-[#FF5722] text-[#F7F7F7] rounded-full font-medium hover:bg-[#FFEB3B] hover:text-[#181818] transition-all duration-300 hover:shadow-lg hover:shadow-[#FFEB3B]/20 hover:-translate-y-0.5">
+                            <a
+                                href="#projects"
+                                onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); }}
+                                className="px-8 py-3.5 bg-[#FF5722] text-[#F7F7F7] rounded-full font-medium hover:bg-[#FFEB3B] hover:text-[#181818] transition-all duration-300 hover:shadow-lg hover:shadow-[#FFEB3B]/20 hover:-translate-y-0.5"
+                                aria-label="Ver mis proyectos"
+                            >
                                 {t('hero.cta_projects')}
                             </a>
-                            <a href="#about" className="px-8 py-3.5 bg-transparent text-[#F7F7F7] rounded-full font-medium border border-white/20 hover:border-[#FFEB3B] hover:text-[#FFEB3B] transition-all duration-300 hover:-translate-y-0.5">
+                            <a
+                                href="#about"
+                                onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}
+                                className="px-8 py-3.5 bg-transparent text-[#F7F7F7] rounded-full font-medium border border-white/20 hover:border-[#FFEB3B] hover:text-[#FFEB3B] transition-all duration-300 hover:-translate-y-0.5"
+                                aria-label="Conocer más sobre mí"
+                            >
                                 {t('hero.cta_about')}
                             </a>
                         </div>
@@ -139,9 +149,16 @@ const Hero = () => {
 
                     <div className="flex items-center justify-center w-full lg:w-1/2" data-aos="zoom-in" data-aos-delay="600">
                         <div className="relative">
-                            <div className="absolute -inset-4 bg-gradient-to-br from-[#FF5722]/40 via-transparent to-[#673AB7]/40 rounded-full blur-2xl animate-[pulse-glow_4s_ease-in-out_infinite]" />
+                            <div className="absolute -inset-4 bg-gradient-to-br from-[#FF5722]/40 via-transparent to-[#673AB7]/40 rounded-full blur-2xl animate-[pulse-glow_4s_ease-in-out_infinite]" aria-hidden="true" />
                             <figure className="relative rounded-full overflow-hidden h-64 w-64 lg:h-96 lg:w-96 ring-2 ring-[#FFEB3B]/50 shadow-2xl shadow-[#673AB7]/20">
-                                <img src={photo} alt="Sandra - Web Developer" className="w-full h-full object-cover" />
+                                <img
+                                    src={photo}
+                                    alt="Sandra Martínez, Front-End Developer"
+                                    width={384}
+                                    height={384}
+                                    fetchPriority="high"
+                                    className="w-full h-full object-contain"
+                                />
                             </figure>
                         </div>
                     </div>

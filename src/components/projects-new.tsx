@@ -21,8 +21,8 @@ const ProjectsNew = () => {
     return (
         <section className="relative py-28 bg-[#181818] overflow-hidden" id="projects">
             {/* Background gradient orbs */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#673AB7]/20 rounded-full blur-[150px] pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#FF5722]/20 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#673AB7]/20 rounded-full blur-[150px] pointer-events-none" aria-hidden="true" />
+            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#FF5722]/20 rounded-full blur-[120px] pointer-events-none" aria-hidden="true" />
 
             <div className="container mx-auto px-6 lg:px-16 relative z-10">
                 {/* Section header */}
@@ -49,7 +49,10 @@ const ProjectsNew = () => {
                             <div className="relative aspect-[16/10] overflow-hidden">
                                 <img
                                     src={projectImages[index]}
-                                    alt={project.name}
+                                    alt={`Captura del proyecto ${project.name}`}
+                                    loading="lazy"
+                                    width={480}
+                                    height={300}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
 
@@ -62,9 +65,10 @@ const ProjectsNew = () => {
                                         href={projectUrls[index]}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label={`Abrir ${project.name} en una nueva pestaña`}
                                         className="absolute top-4 right-4 p-3 bg-white/90 backdrop-blur-sm rounded-xl text-text-primary opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-white shadow-lg"
                                     >
-                                        <FaExternalLinkAlt className="text-sm" />
+                                        <FaExternalLinkAlt className="text-sm" aria-hidden="true" />
                                     </a>
                                 )}
 
@@ -75,10 +79,11 @@ const ProjectsNew = () => {
                                             href={projectUrls[index]}
                                             target="_blank"
                                             rel="noopener noreferrer"
+                                            aria-label={`Explorar proyecto ${project.name}`}
                                             className="flex items-center gap-2 text-white text-sm font-medium hover:gap-3 transition-all duration-300"
                                         >
                                             {t('projects.view_project')}
-                                            <FaArrowRight className="text-xs" />
+                                            <FaArrowRight className="text-xs" aria-hidden="true" />
                                         </a>
                                     </div>
                                 )}

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 import { useTranslation } from "../i18n/LanguageContext";
 
@@ -153,12 +153,12 @@ const Contact = () => {
     return (
         <section className="relative py-28 overflow-hidden" id="contact" style={{ backgroundColor: '#181818' }}>
             {/* Particle canvas */}
-            <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" />
+            <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true" />
 
             {/* Decorative glows */}
-            <div className="absolute top-10 right-10 w-[450px] h-[450px] rounded-full blur-[140px] pointer-events-none" style={{ background: 'rgba(103, 58, 183, 0.2)' }} />
-            <div className="absolute bottom-10 left-10 w-[400px] h-[400px] rounded-full blur-[120px] pointer-events-none" style={{ background: 'rgba(255, 87, 34, 0.2)' }} />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full blur-[160px] pointer-events-none" style={{ background: 'rgba(255, 235, 59, 0.1)' }} />
+            <div className="absolute top-10 right-10 w-[450px] h-[450px] rounded-full blur-[140px] pointer-events-none" style={{ background: 'rgba(103, 58, 183, 0.2)' }} aria-hidden="true" />
+            <div className="absolute bottom-10 left-10 w-[400px] h-[400px] rounded-full blur-[120px] pointer-events-none" style={{ background: 'rgba(255, 87, 34, 0.2)' }} aria-hidden="true" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full blur-[160px] pointer-events-none" style={{ background: 'rgba(255, 235, 59, 0.1)' }} aria-hidden="true" />
 
             {/* Top separator line */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[1px]" style={{ background: 'linear-gradient(90deg, transparent, rgba(103, 58, 183, 0.4), rgba(255, 87, 34, 0.4), transparent)' }} />
@@ -191,12 +191,12 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="p-3 rounded-2xl" style={{ background: 'rgba(255, 87, 34, 0.15)', border: '1px solid rgba(255, 87, 34, 0.25)' }}>
+                                    <div className="p-3 rounded-2xl" style={{ background: 'rgba(255, 87, 34, 0.15)', border: '1px solid rgba(255, 87, 34, 0.25)' }} aria-hidden="true">
                                         <FaPhone className="text-lg" style={{ color: '#FF5722' }} />
                                     </div>
                                     <div>
                                         <p className="text-xs font-medium uppercase tracking-wider" style={{ color: '#9393a8' }}>{t('contact.phone_label')}</p>
-                                        <p className="text-sm font-medium" style={{ color: '#e2e2ea' }}>+52 (77) 7209 5506</p>
+                                        <a href="tel:+527772095506" className="text-sm font-medium" style={{ color: '#e2e2ea' }}>+52 (77) 7209 5506</a>
                                     </div>
                                 </div>
                             </div>
@@ -204,17 +204,29 @@ const Contact = () => {
                             <div className="mt-8 pt-8" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
                                 <h4 className="text-xs font-semibold uppercase tracking-wider mb-4" style={{ color: '#9393a8' }}>{t('contact.social_label')}</h4>
                                 <div className="flex gap-3">
-                                    <a href="https://www.linkedin.com/in/sandra-mtz-c/" className="p-3 rounded-2xl transition-all duration-300 hover:-translate-y-0.5" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.08)', color: '#9393a8' }}
+                                    <a
+                                        href="https://www.linkedin.com/in/sandra-mtz-c/"
+                                        aria-label="Perfil de LinkedIn de Sandra Martínez"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-3 rounded-2xl transition-all duration-300 hover:-translate-y-0.5"
+                                        style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.08)', color: '#9393a8' }}
                                         onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255, 235, 59, 0.15)'; e.currentTarget.style.borderColor = 'rgba(255, 235, 59, 0.3)'; e.currentTarget.style.color = '#FFEB3B'; }}
                                         onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)'; e.currentTarget.style.color = '#9393a8'; }}
                                     >
-                                        <FaLinkedin className="text-lg" />
+                                        <FaLinkedin className="text-lg" aria-hidden="true" />
                                     </a>
-                                    <a href="https://github.com/SanSam13/" className="p-3 rounded-2xl transition-all duration-300 hover:-translate-y-0.5" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.08)', color: '#9393a8' }}
+                                    <a
+                                        href="https://github.com/SanSam13/"
+                                        aria-label="Perfil de GitHub de Sandra Martínez"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-3 rounded-2xl transition-all duration-300 hover:-translate-y-0.5"
+                                        style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.08)', color: '#9393a8' }}
                                         onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255, 235, 59, 0.15)'; e.currentTarget.style.borderColor = 'rgba(255, 235, 59, 0.3)'; e.currentTarget.style.color = '#FFEB3B'; }}
                                         onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)'; e.currentTarget.style.color = '#9393a8'; }}
                                     >
-                                        <FaGithub className="text-lg" />
+                                        <FaGithub className="text-lg" aria-hidden="true" />
                                     </a>
                                 </div>
                             </div>
@@ -242,6 +254,7 @@ const Contact = () => {
                                 <div className="space-y-2">
                                     <label htmlFor="user_name" className="text-xs font-medium uppercase tracking-wider" style={{ color: '#9393a8' }}>{t('contact.name_label')}</label>
                                     <input
+                                        id="user_name"
                                         type="text"
                                         name="user_name"
                                         className="w-full px-4 py-3 rounded-xl outline-none transition-all duration-300"
@@ -256,6 +269,7 @@ const Contact = () => {
                                 <div className="space-y-2">
                                     <label htmlFor="user_email" className="text-xs font-medium uppercase tracking-wider" style={{ color: '#9393a8' }}>{t('contact.email_input_label')}</label>
                                     <input
+                                        id="user_email"
                                         type="email"
                                         name="user_email"
                                         className="w-full px-4 py-3 rounded-xl outline-none transition-all duration-300"
@@ -272,6 +286,7 @@ const Contact = () => {
                             <div className="space-y-2 mb-5">
                                 <label htmlFor="subject" className="text-xs font-medium uppercase tracking-wider" style={{ color: '#9393a8' }}>{t('contact.subject_label')}</label>
                                 <input
+                                    id="subject"
                                     type="text"
                                     name="subject"
                                     className="w-full px-4 py-3 rounded-xl outline-none transition-all duration-300"
@@ -287,6 +302,7 @@ const Contact = () => {
                             <div className="space-y-2 mb-8">
                                 <label htmlFor="message" className="text-xs font-medium uppercase tracking-wider" style={{ color: '#9393a8' }}>{t('contact.message_label')}</label>
                                 <textarea
+                                    id="message"
                                     name="message"
                                     rows={5}
                                     className="w-full px-4 py-3 rounded-xl outline-none transition-all duration-300 resize-none"

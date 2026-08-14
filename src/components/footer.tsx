@@ -1,5 +1,5 @@
 import { FiCode } from "react-icons/fi";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { useTranslation } from "../i18n/LanguageContext";
 
 const Footer = () => {
@@ -15,15 +15,27 @@ const Footer = () => {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <a href="https://www.linkedin.com/in/sandra-mtz-c/" className="text-white/40 hover:text-white transition-colors duration-300">
-                            <FaLinkedin className="text-lg" />
+                        <a
+                            href="https://www.linkedin.com/in/sandra-mtz-c/"
+                            aria-label="Perfil de LinkedIn de Sandra Martínez"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white/40 hover:text-white transition-colors duration-300"
+                        >
+                            <FaLinkedin className="text-lg" aria-hidden="true" />
                         </a>
-                        <a href="https://github.com/SanSam13/" className="text-white/40 hover:text-white transition-colors duration-300">
-                            <FaGithub className="text-lg" />
+                        <a
+                            href="https://github.com/SanSam13/"
+                            aria-label="Perfil de GitHub de Sandra Martínez"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white/40 hover:text-white transition-colors duration-300"
+                        >
+                            <FaGithub className="text-lg" aria-hidden="true" />
                         </a>
                     </div>
 
-                    <div className="text-center md:text-right">
+                    <div className="text-center md:text-right max-w-64">
                         <p className="text-xs text-white/30">{t('footer.copyright')}</p>
                     </div>
                 </div>

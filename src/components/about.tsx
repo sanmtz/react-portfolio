@@ -10,14 +10,17 @@ const About = () => {
             <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-[#673AB7]/20 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="container mx-auto px-6 lg:px-16">
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-16 min-h-[70vh]">
+                <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-16 min-h-[70vh]">
                     {/* Image */}
                     <div className="w-full lg:w-1/3 flex justify-center" data-aos="fade-right" data-aos-duration="1000">
                         <div className="relative">
-                            <div className="absolute -inset-6 bg-gradient-to-br from-[#FF5722]/30 to-[#673AB7]/30 rounded-3xl blur-xl" />
+                            <div className="absolute -inset-6 bg-gradient-to-br from-[#FF5722]/30 to-[#673AB7]/30 rounded-3xl blur-xl" aria-hidden="true" />
                             <img
                                 src={photo}
-                                alt="Sandra Programmer"
+                                alt="Sandra Martínez, desarrolladora Front-End"
+                                width={288}
+                                height={288}
+                                loading="lazy"
                                 className="relative w-56 lg:w-72 drop-shadow-2xl"
                             />
                         </div>

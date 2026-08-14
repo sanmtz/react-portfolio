@@ -10,7 +10,7 @@ import Contact from "./contact";
 
 const Main = () => {
     return (
-        <div className="relative">
+        <main className="relative overflow-x-hidden">
             <Header />
             <Hero />
             <About />
@@ -20,7 +20,7 @@ const Main = () => {
             <ProjectsNew />
             <Contact />
             <Footer />
-        </div>
+        </main>
     )
 }
 
