@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { FiMenu, FiX, FiUser, FiSettings, FiBriefcase, FiPhone, FiCode, FiGlobe, FiCpu } from "react-icons/fi";
+import { FiMenu, FiX, FiUser, FiSettings, FiBriefcase, FiCode, FiGlobe, FiCpu } from "react-icons/fi";
 import { useTranslation } from "../i18n/LanguageContext";
 
 const Header = () => {

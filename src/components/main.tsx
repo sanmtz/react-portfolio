@@ -4,7 +4,7 @@ import Hero from "./hero";
 import About from "./about";
 import Skills from "./skills";
 import AISection from "./ai-section";
-import WebAudit from "./web-audit";
+// import WebAudit from "./web-audit";
 import ProjectsNew from "./projects-new";
 import Contact from "./contact";
 

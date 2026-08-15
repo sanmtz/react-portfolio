@@ -3,8 +3,6 @@ import { useTranslation } from "../i18n/LanguageContext";
 const AISection = () => {
     const { t } = useTranslation();
 
-    const aiSkills = (t('ai.skills') as { title: string; description: string }[]);
-
     return (
         <section className="relative py-28 overflow-hidden bg-[#181818] section-glow" id="ai">
             <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[#FF5722]/20 rounded-full blur-[150px] pointer-events-none" aria-hidden="true" />
