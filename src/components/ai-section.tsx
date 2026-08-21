@@ -25,7 +25,7 @@ const AISection = () => {
                 <div className="mt-24 relative" data-aos="fade-up" data-aos-delay="600">
                     <p className="text-center text-xs text-[#FFEB3B] uppercase tracking-[0.3em] mb-8">{t('ai.tools_label')}</p>
                     <ul className="flex items-center justify-center flex-wrap gap-3 md:gap-4" aria-label="Herramientas de IA utilizadas">
-                        {['OpenAI', 'Gemini', 'Codex', 'Antigravity', 'Cursor', 'GitHub Copilot', 'Claude', 'ChatGPT'].map((tool) => (
+                        {['ChatGPT', 'Codex', 'Antigravity', 'Cursor', 'Claude'].map((tool) => (
                             <li
                                 key={tool}
                                 className="px-5 py-2.5 rounded-full border border-white/10 text-sm font-medium text-[#F7F7F7]/70 hover:text-[#FFEB3B] hover:border-[#FFEB3B]/30 hover:bg-[#FFEB3B]/10 transition-all duration-300 cursor-default"

@@ -1,4 +1,4 @@
-import photo from "../assets/photo.webp"
+import photo from "../assets/photo.avif"
 import { useTranslation } from "../i18n/LanguageContext";
 
 const About = () => {

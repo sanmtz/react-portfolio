@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import photo from "../assets/san_programmer.webp"
+import photo from "../assets/san_programmer.avif"
 import { useTranslation } from "../i18n/LanguageContext";
 
 const Hero = () => {
@@ -157,6 +157,7 @@ const Hero = () => {
                                     width={384}
                                     height={384}
                                     fetchPriority="high"
+                                    decoding="async"
                                     className="w-full h-full object-contain"
                                 />
                             </figure>

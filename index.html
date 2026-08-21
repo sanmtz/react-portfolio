@@ -9,28 +9,40 @@
   <meta name="description"
     content="Portfolio de Sandra Martínez, Front-End Developer especializada en Angular, React y TypeScript. Construyo experiencias web rápidas, accesibles y optimizadas con IA." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://sandra-mtz.dev/" />
+  <link rel="canonical" href="https://sanmtz.github.io/react-portfolio/" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
 
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sandra-mtz.dev/" />
+  <meta property="og:url" content="https://sanmtz.github.io/react-portfolio/" />
   <meta property="og:title" content="Sandra Martínez | Front-End Developer" />
   <meta property="og:description"
     content="Portfolio de Sandra Martínez, Front-End Developer especializada en Angular, React y TypeScript. Experiencias web rápidas, accesibles y optimizadas." />
-  <meta property="og:image" content="https://sandra-mtz.dev/logo.png" />
+  <meta property="og:image" content="https://sanmtz.github.io/react-portfolio/logo.png" />
   <meta property="og:locale" content="es_MX" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Sandra Martínez Portfolio" />
 
 
-  <!-- Google Fonts — preconnect -->
+  <!-- Google Fonts — non-blocking load -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  </noscript>
+
+  <!-- Preload LCP image (hero photo) -->
+  <link rel="preload" as="image" href="/react-portfolio/san_programmer.avif" fetchpriority="high" type="image/avif" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -39,11 +51,11 @@
       "@graph": [
         {
           "@type": "Person",
-          "@id": "https://sandra-mtz.dev/#person",
+          "@id": "https://sanmtz.github.io/react-portfolio/#person",
           "name": "Sandra Martínez",
           "jobTitle": "Front-End Developer",
           "description": "Front-End Developer especializada en React, Angular, TypeScript y experiencias web optimizadas con Inteligencia Artificial.",
-          "url": "https://sandra-mtz.dev/",
+          "url": "https://sanmtz.github.io/react-portfolio/",
           "email": "sansam252@gmail.com",
           "sameAs": [
             "https://www.linkedin.com/in/sandra-mtz-c/",
@@ -62,11 +74,11 @@
         },
         {
           "@type": "WebSite",
-          "@id": "https://sandra-mtz.dev/#website",
-          "url": "https://sandra-mtz.dev/",
+          "@id": "https://sanmtz.github.io/react-portfolio/#website",
+          "url": "https://sanmtz.github.io/react-portfolio/",
           "name": "Sandra Martínez Portfolio",
           "description": "Portfolio profesional de Sandra Martínez, Front-End Developer.",
-          "author": { "@id": "https://sandra-mtz.dev/#person" }
+          "author": { "@id": "https://sanmtz.github.io/react-portfolio/#person" }
         }
       ]
     }

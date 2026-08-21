@@ -1,6 +1,6 @@
-import { FiCode } from "react-icons/fi";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { useTranslation } from "../i18n/LanguageContext";
+import logo from "../assets/logo-white.png";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -9,9 +9,8 @@ const Footer = () => {
         <footer className="bg-surface-dark text-white/60 py-0">
             <div className="container mx-auto px-6 lg:px-16">
                 <div className="flex flex-col md:flex-row items-center justify-between py-10 gap-6">
-                    <div className="flex items-center gap-2 text-white/80">
-                        <FiCode className="text-lg" />
-                        <span className="font-semibold text-sm tracking-tight">Sandra Mtz</span>
+                    <div className="flex items-center gap-2">
+                        <img src={logo} alt="Logo" className="w-16 h-auto opacity-70" />
                     </div>
 
                     <div className="flex items-center gap-4">

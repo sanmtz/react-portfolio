@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { FiMenu, FiX, FiUser, FiSettings, FiBriefcase, FiCode, FiGlobe, FiCpu } from "react-icons/fi";
 import { useTranslation } from "../i18n/LanguageContext";
+import logo from "../assets/logo-white.png";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
         { id: 3, name: t('header.skills'), href: "#skills", icon: <FiSettings /> },
         { id: 4, name: t('header.ai'), href: "#ai", icon: <FiCpu /> },
         { id: 5, name: t('header.projects'), href: "#projects", icon: <FiBriefcase /> },
-       
+
     ];
 
     const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -45,9 +46,12 @@ const Header = () => {
             <div className="container mx-auto px-6 lg:px-16">
                 <div className="flex justify-between items-center py-5">
                     {/* Logo */}
-                    <a href="#" className="flex items-center gap-2 text-[#F7F7F7] hover:text-[#FFEB3B] transition-colors">
+                    {/* <a href="#" className="flex items-center gap-2 text-[#F7F7F7] hover:text-[#FFEB3B] transition-colors">
                         <FiCode className="text-2xl" />
                         <span className="font-semibold text-lg tracking-tight">Sandra</span>
+                    </a> */}
+                    <a href="#" className="flex items-center gap-2 text-[#F7F7F7] hover:text-[#FFEB3B] transition-colors">
+                        <img src={logo} alt="Logo" className="w-16 h-auto" />
                     </a>
 
                     {/* Mobile menu button */}
@@ -108,15 +112,15 @@ const Header = () => {
                 </div>
 
                 {/* Mobile menu overlay */}
-                <div 
-                    className={`fixed inset-0 bg-black/60 z-[90] transition-opacity duration-500 md:hidden ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} 
-                    onClick={() => setIsOpen(false)} 
+                <div
+                    className={`fixed inset-0 bg-black/60 z-[90] transition-opacity duration-500 md:hidden ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+                    onClick={() => setIsOpen(false)}
                 />
 
                 {/* Mobile menu drawer */}
                 <div className={`fixed inset-y-0 left-0 w-[85%] max-w-sm h-[100dvh] z-[100] bg-[#181818] shadow-2xl flex flex-col transition-transform duration-500 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                     <div className="absolute inset-0 bg-gradient-to-br from-[#FF5722]/5 to-[#673AB7]/10 pointer-events-none" />
-                    
+
                     <button
                         className="absolute top-6 right-6 z-50 p-2"
                         onClick={() => setIsOpen(false)}
