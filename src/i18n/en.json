@@ -241,6 +241,7 @@
     "sending": "Sending...",
     "success": "Message sent successfully! I'll get back to you as soon as possible.",
     "error": "There was an error sending the message. Please try again.",
+    "error_configuration": "The contact form is not configured. Please contact the site owner.",
     "error_name": "Name must be at least 2 characters long.",
     "error_email": "Please enter a valid email address.",
     "error_subject": "Subject must be at least 3 characters long.",

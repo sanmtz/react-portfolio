@@ -238,6 +238,7 @@
     "sending": "Enviando...",
     "success": "¡Mensaje enviado con éxito! Te responderé lo antes posible.",
     "error": "Hubo un error al enviar el mensaje. Por favor intenta nuevamente.",
+    "error_configuration": "El formulario no está configurado. Contacta a la administradora del sitio.",
     "error_name": "El nombre debe tener al menos 2 caracteres.",
     "error_email": "Por favor, ingresa un correo electrónico válido.",
     "error_subject": "El asunto debe tener al menos 3 caracteres.",

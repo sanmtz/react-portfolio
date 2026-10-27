@@ -1,5 +1,16 @@
 # React + TypeScript + Vite
 
+## Contact form setup
+
+The contact form uses EmailJS. Copy `.env.example` to `.env` and fill in the
+Service ID, Template ID, and Public Key from the EmailJS account. Restart the
+Vite development server after changing the environment file.
+
+For GitHub Pages, set the same `VITE_EMAILJS_*` variables in the environment
+that runs `npm run deploy`, because Vite embeds them into the published build.
+These client-side values are visible in the website bundle; never put private
+EmailJS credentials or email account passwords in them.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

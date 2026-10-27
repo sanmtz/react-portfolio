@@ -8,6 +8,7 @@ const Contact = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
     const [errors, setErrors] = useState({ name: '', email: '', subject: '', message: '' });
+    const [submissionError, setSubmissionError] = useState('');
     const { t } = useTranslation();
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -32,7 +33,7 @@ const Contact = () => {
         }
     };
 
-    const sendEmail = (e: React.FormEvent) => {
+    const sendEmail = async (e: React.FormEvent) => {
         e.preventDefault();
 
         if (!form.current) return;
@@ -44,7 +45,7 @@ const Contact = () => {
         const subject = formData.get('subject') as string;
         const message = formData.get('message') as string;
 
-        let newErrors = { name: '', email: '', subject: '', message: '' };
+        const newErrors = { name: '', email: '', subject: '', message: '' };
         let isValid = true;
 
         if (!name || name.trim().length < 2) {
@@ -72,28 +73,31 @@ const Contact = () => {
 
         if (!isValid) return;
 
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID?.trim();
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID?.trim();
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY?.trim();
+
+        if (!serviceId || !templateId || !publicKey) {
+            console.error('EmailJS is not configured. Set VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY.');
+            setSubmissionError(t('contact.error_configuration'));
+            setStatus('error');
+            return;
+        }
+
+        setSubmissionError('');
         setStatus('sending');
 
-        emailjs.sendForm(
-            import.meta.env.VITE_EMAILJS_SERVICE_ID,
-            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            form.current,
-            {
-                publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-            }
-        )
-            .then(
-                () => {
-                    setStatus('success');
-                    if (form.current) form.current.reset();
-                    setTimeout(() => setStatus('idle'), 5000);
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
-                    setStatus('error');
-                    setTimeout(() => setStatus('idle'), 5000);
-                },
-            );
+        try {
+            await emailjs.sendForm(serviceId, templateId, form.current, { publicKey });
+            setStatus('success');
+            form.current.reset();
+            setTimeout(() => setStatus('idle'), 5000);
+        } catch (error) {
+            console.error('EmailJS message submission failed:', error);
+            setSubmissionError(t('contact.error'));
+            setStatus('error');
+            setTimeout(() => setStatus('idle'), 5000);
+        }
     };
 
     // Particle canvas (same style as hero)
@@ -246,7 +250,7 @@ const Contact = () => {
                             )}
                             {status === 'error' && (
                                 <div className="mb-6 p-4 rounded-2xl text-sm" style={{ background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.2)', color: '#fca5a5' }}>
-                                    {t('contact.error')}
+                                    {submissionError || t('contact.error')}
                                 </div>
                             )}
 
