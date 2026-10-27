@@ -3,6 +3,7 @@
     "about": "Sobre mí",
     "skills": "Habilidades",
     "ai": "IA",
+    "new_project": "Nuevo proyecto",
     "projects": "Proyectos",
     "contact": "Contacto",
     "cta": "Contáctame"
@@ -55,6 +56,30 @@
       }
     ],
     "tools_label": "Herramientas que he utilizado"
+  },
+  "new_project": {
+    "badge": "Próximo proyecto:",
+    "title": "Performance Analyzer",
+    "description": "Estoy desarrollando Performance Analyzer, una aplicación web para analizar el rendimiento de sitios web a partir de una URL y consultar métricas de rendimiento, accesibilidad, SEO y Core Web Vitals.",
+    "details": "El proyecto abarca desde la arquitectura de información y el diseño UX/UI hasta la implementación con Angular 22, TypeScript y Tailwind CSS 4, incorporando diseño responsivo, accesibilidad y pruebas unitarias.",
+    "github_button": "Ver proyecto en GitHub",
+    "steps": [
+      {
+        "title": "Mapa del sitio",
+        "alt": "Mapa del sitio que define la estructura de Performance Analyzer",
+        "description": "Definición de la arquitectura de información y organización de las secciones."
+      },
+      {
+        "title": "Wireframe",
+        "alt": "Wireframe de la interfaz de Performance Analyzer",
+        "description": "Planificación de la estructura y distribución de los elementos de la interfaz."
+      },
+      {
+        "title": "Diseño",
+        "alt": "Sistema de diseño y propuestas de interfaz adaptable para Performance Analyzer",
+        "description": "Diseño visual, selección de tipografía, colores y componentes, considerando la experiencia de usuario y la accesibilidad."
+      }
+    ]
   },
   "audit": {
     "badge": "Servicios Especializados",

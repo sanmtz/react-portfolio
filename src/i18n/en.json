@@ -3,6 +3,7 @@
     "about": "About",
     "skills": "Skills",
     "ai": "AI",
+    "new_project": "New Project",
     "projects": "Projects",
     "contact": "Contact",
     "cta": "Get in Touch"
@@ -24,18 +25,18 @@
     "badge": "Get to know me",
     "title": "About Me",
     "p1": "I believe great Front-End development goes beyond writing code. My goal is to build digital experiences that are intuitive, fast, and enjoyable for users.\n\nI'm passionate about continuous learning and exploring new technologies that help me deliver better solutions.",
-    "p2": "I'm currently expanding my skills in React, Artificial Intelligence for software development, and web performance best practices to grow as a developer.\n\nI enjoy collaborating with teams, solving complex problems, and turning designs into functional, user-friendly interfaces. I strive to write clean, reusable, and maintainable code while prioritizing accessibility, performance, and user experience."
+    "p2": "I'm currently expanding my skills in React, Artificial Intelligence for software development, and web performance best practices to grow as a developer.\n\nI enjoy collaborating in teams, solving complex problems, and turning designs into functional, user-friendly interfaces. I strive to write clean, reusable, and maintainable code while prioritizing accessibility, performance, and user experience."
   },
   "skills": {
     "badge": "TECHNICAL EXPERTISE",
     "title": "My Tech Stack",
-    "description": "I work with modern tools and frameworks to build efficient, scalable, and maintainable web applications."
+    "description": "I work on modern tools and frameworks to build efficient, scalable, and maintainable web applications."
   },
   "ai": {
     "badge": "Powered by AI",
     "title_before": "I Work with",
     "title_highlight": "Artificial Intelligence",
-    "description": "I combine web development with the latest AI technologies to create unique experiences, automate processes, and build intelligent skills.",
+    "description": "I combine web development with the latest AI technologies to create unique experiences, automate processes, and build intelligence skills.",
     "skills": [
       {
         "title": "Chatbots & Assistants",
@@ -55,6 +56,30 @@
       }
     ],
     "tools_label": "Tools I've Worked With"
+  },
+  "new_project": {
+    "badge": "Next project:",
+    "title": "Performance Analyzer",
+    "description": "I'm developing Performance Analyzer, a web application that analyzes a site's performance from a URL and provides speed, accessibility, SEO, and Core Web Vitals metrics.",
+    "details": "The project spans information architecture and UX/UI design through implementation with Angular 22, TypeScript, and Tailwind CSS 4, with responsive design, a11y, and unit testing.",
+    "github_button": "View project on GitHub",
+    "steps": [
+      {
+        "title": "Sitemap",
+        "alt": "Sitemap defining the Performance Analyzer page structure",
+        "description": "Define the information architecture and organize the sections."
+      },
+      {
+        "title": "Wireframe",
+        "alt": "Wireframe of the Performance Analyzer interface",
+        "description": "Plan the interface structure and the layout of its elements."
+      },
+      {
+        "title": "Design",
+        "alt": "Responsive design system and interface mockups for the Performance Analyzer",
+        "description": "Create the visual design and choose typography, colors, and components with user experience and accessibility in mind."
+      }
+    ]
   },
   "audit": {
     "badge": "Specialized Services",
@@ -111,7 +136,7 @@
   "projects": {
     "badge": "Portfolio",
     "title": "Projects",
-    "description": "Explore a selection of projects where I've built modern, high-performance, and user-focused web interfaces.",
+    "description": "Explore a variety of projects where I've built modern, high-performance, and user-focused web interfaces.",
     "view_project": "Explore project",
     "end_cta_title": "Like what you see?",
     "end_cta_button": "Let's work together",
@@ -122,51 +147,73 @@
         "tags": [
           "Angular",
           "TypeScript",
-          "Bootstrap"
+          "Angular Material",
+          "REST API consumption"
         ]
       },
       {
         "name": "Aprende",
         "description": "Online learning portal with free and universal access to high-quality educational content.",
         "tags": [
-          "React",
+          "Angular",
           "TypeScript",
-          "Tailwind CSS"
+          "Angular Material",
+          "REST API consumption"
         ]
       },
       {
         "name": "Genera",
         "description": "Human resources management software for controlling access, visits, and business operations.",
         "tags": [
-          "WordPress",
           "HubSpot",
-          "CSS3"
-        ]
-      },
-      {
-        "name": "Capacitate para el empleo",
-        "description": "Educational job training platform with courses, diplomas, and learning paths for thousands of users.",
-        "tags": [
-          "Angular",
-          "TypeScript",
-          "Bootstrap"
-        ]
-      },
-      {
-        "name": "Aprende",
-        "description": "Online learning portal with free and universal access to high-quality educational content.",
-        "tags": [
-          "React",
-          "TypeScript",
+          "JavaScript",
           "Tailwind CSS"
         ]
       },
       {
-        "name": "Growth Summit",
+        "name": "Ekasa",
+        "tags": [
+          "HubSpot",
+          "JavaScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "Summit Growth 26",
         "description": "Landing page for the biggest Inbound Marketing event in LATAM, with a dynamic and modern design.",
         "tags": [
           "HubSpot",
-          "CSS3",
+          "JavaScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "MALEK",
+        "tags": [
+          "WordPress",
+          "Elementor"
+        ]
+      },
+      {
+        "name": "Tecmilenio",
+        "tags": [
+          "HubSpot",
+          "JavaScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "GTPlastics",
+        "tags": [
+          "HubSpot",
+          "JavaScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "name": "Madreceiba",
+        "tags": [
+          "Tailwind CSS",
           "JavaScript"
         ]
       }

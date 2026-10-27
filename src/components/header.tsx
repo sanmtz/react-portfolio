@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { FiMenu, FiX, FiUser, FiSettings, FiBriefcase, FiCode, FiGlobe, FiCpu } from "react-icons/fi";
+import { FiMenu, FiX, FiUser, FiSettings, FiBriefcase, FiCode, FiGlobe, FiCpu, FiLayers } from "react-icons/fi";
 import { useTranslation } from "../i18n/LanguageContext";
 import logo from "../assets/logo-white.png";
 
@@ -18,7 +18,8 @@ const Header = () => {
         { id: 2, name: t('header.about'), href: "#about", icon: <FiUser /> },
         { id: 3, name: t('header.skills'), href: "#skills", icon: <FiSettings /> },
         { id: 4, name: t('header.ai'), href: "#ai", icon: <FiCpu /> },
-        { id: 5, name: t('header.projects'), href: "#projects", icon: <FiBriefcase /> },
+        { id: 5, name: t('header.new_project'), href: "#new-project", icon: <FiLayers /> },
+        { id: 6, name: t('header.projects'), href: "#projects", icon: <FiBriefcase /> },
 
     ];
 
